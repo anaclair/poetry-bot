@@ -10,11 +10,12 @@ var T = new Twit({
                 });
 //--- End ---
 
-//--- Requests to poetrydb to get all lines of poetry ---
+//--- Requests to poetrydb to get all lines of poetry with a linecount of 14 ---
+//--- ( My API made on KimonoLabs grabbed some odd data so I decided to work with a preexisting database ) ---
 //--- Then call haiku and prose functions ---
 function run() {
 var all_lines = [];
-  request("http://poetrydb.org/linecount/14/lines,linecount", function(err, response, body) {
+  request("http://poetrydb.org/linecount/14/lines", function(err, response, body) {
     var json_object = JSON.parse(body);
     for (obj=0;obj<json_object.length;obj++) {
       for(line=0;line<json_object[obj]['lines'].length;line++) {
@@ -56,7 +57,7 @@ function makeHaiku(all_lines) {
   tweet.push(fives[Math.floor(Math.random()*fives.length)]);
   tweet.push(sevens[Math.floor(Math.random()*sevens.length)]);
   tweet.push(fives[Math.floor(Math.random()*fives.length)]);
-  tweet = tweet.join('\n');
+  tweet = 'A haiku:\n' + tweet.join('\n');
   post(tweet);
 };
 //--- End ---
