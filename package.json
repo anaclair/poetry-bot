@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Tries to post prose and haiku to Twitter by hashing random poems together",
   "main": "poetry-bot.js",
-  "scripts": {},
+  "scripts": {
+    "start": "poetry-bot.js"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anaclair/poetry-bot.git"

@@ -1,1 +1,1 @@
-web: node poetry-bot.js
+worker: node poetry-bot.js
