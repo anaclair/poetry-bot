@@ -1,0 +1,24 @@
+{
+  "name": "poetry-bot",
+  "version": "1.0.0",
+  "description": "Tries to post prose and haiku to Twitter by hashing random poems together",
+  "main": "poetry-bot.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anaclair/poetry-bot.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anaclair/poetry-bot/issues"
+  },
+  "homepage": "https://github.com/anaclair/poetry-bot#readme",
+  "dependencies": {
+    "async": "^1.4.2",
+    "lodash": "^3.10.1",
+    "node-rest-client": "^1.5.1",
+    "request": "^2.64.0",
+    "syllable": "^0.1.4",
+    "twit": "^2.1.0"
+  }
+}
