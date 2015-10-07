@@ -71,7 +71,6 @@ function post(tweet) {
 //--- End ---
 
 //--- run() once and then set run() to be called once a day ---
-run();
 var dayInMilliseconds = 1000 * 60 * 60 * 24;
 setInterval(function() {
   try {
